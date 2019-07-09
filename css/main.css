@@ -7,6 +7,7 @@ body {
   background-color: #efefef;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap; /* content wraps and falls to next line*/
   max-width: 1200px;
 }
 
@@ -17,7 +18,22 @@ body {
   padding: 20px;
   text-align: center;
   margin: 10px;
-  width: 100px;
+  /* width: 200px; */
+  flex: 1 1 auto; /* shorthand for flex-grow & shrink ; order: grow shrink width */
 }
 
+.box1 {
+  width: 400px;
+}
 
+/* .box2 {
+  flex-grow: 2;
+} */
+
+/* .box4 {
+  order: -1; /*by default, all items get an order (ordinal) # of 0
+} */
+
+h1 {
+  font-size: 30vw;  
+}
